@@ -1,0 +1,9 @@
+     148   10267 sequences.nt.fa
+>NM_001126114.2 Homo sapiens tumor protein p53 (TP53), transcript variant 3, mRNA
+TTTATAGCTGTTGGAAGGACTAGGTCTTCCCTAGCCCCCCCAGTGTGCAAGGGCAGTGAAGACTTGATTG
+TACAAAATACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCAAAA
+AAAAAAAAAAAAAA
+       2      23     173
+command line
+sort -k 10rg cuffdiff.txt |column -t |less -S
+cut -f 1 top100.sorted.cuffdiff.out | sort |uniq > differentially.expressed.genes.txt
