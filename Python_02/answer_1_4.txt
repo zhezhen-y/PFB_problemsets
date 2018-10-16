@@ -1,0 +1,42 @@
+pfb06:problemsets zyu$ python3
+Python 3.7.0 (default, Jun 28 2018, 07:39:16) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> dna = "GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA"
+>>> 'ATG' in dna
+False
+>>> 'TTT' in dna
+True
+>>> bool(0)
+False
+>>> bool(0,0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: bool expected at most 1 arguments, got 2
+>>> bool(0.0)
+False
+>>> bool(FALSE)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'FALSE' is not defined
+>>> bool("FALSE')
+  File "<stdin>", line 1
+    bool("FALSE')
+                ^
+SyntaxError: EOL while scanning string literal
+>>> bool("FALSE")
+True
+>>> bool('False')
+True
+>>> bool(False)
+False
+>>> bool(false)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'false' is not defined
+>>> bool(True)
+True
+>>> bool('True')
+True
+>>> 
+
