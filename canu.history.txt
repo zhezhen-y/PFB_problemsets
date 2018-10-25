@@ -1,0 +1,76 @@
+    1  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    2  brew install wget curl emacs --with-cocoa
+    3  brew install nano
+    4  sh /Volumes/sojourn/syntax.sh 
+    5  ls -a
+    6  cat .bash_profile 
+    7     . "/Users/admin/anaconda3/etc/profile.d/conda.sh"
+    8          CONDA_CHANGEPS1=false conda activate base
+    9      else
+   10          \export PATH="/Users/admin/anaconda3/bin:$PATH"
+   11      fi
+   12  fi
+   13  unset __conda_setup
+   14  :q
+   15  cat .bash_profile 
+   16  python
+   17  ls
+   18  conda
+   19  python
+   20  xcode
+   21   
+   22  brew
+   23  python
+   24  cat .bash_profile 
+   25  pwd
+   26  cd ..
+   27  ls
+   28  which python
+   29  cd ~
+   30  ls
+   31  ls -a
+   32  pwd
+   33  git clone https://github.com/marbl/canu.git
+   34  cd canu/src
+   35  brew install gcc
+   36  make -j 4
+   37  brew install gnuplot@4
+   38  curl -L -o pacbio.fastq
+   39  http://gembox.cbcb.umd.edu/mhap/raw/ecoli_p6_
+   40  25x.filtered.fastq
+   41  curl -L -o pacbio.fastq http://gembox.cbcb.umd.edu/mhap/raw/ecoli_p6_
+   42  pwd
+   43  ls
+   44  history
+   45  which gcc
+   46  ls ..
+   47  ls ../Darwin-amd64/
+   48  ls ../Darwin-amd64/bin/
+   49  which java
+   50  cd ../Darwin-amd64/bin/
+   51  pwd
+   52  /Users/admin/canu/Darwin-amd64/bin/canu -p ecoli -d ecoli-pacbio genomeSize=4.8m -pacbio-raw ~/Desktop/canu/pacbio.fastq saveReads=true \ gnuplot=/usr/local/opt/gnuplot\@4/bin/gnuplot 2>CanuRun_20181022.log
+   53  /Users/admin/canu/Darwin-amd64/bin/canu
+   54  history
+   55  cd
+   56  cd Desktop/
+   57  curl -L -o pacbio.fastq http://gembox.cbcb.umd.edu/mhap/raw/ecoli_p6_25x.filtered.fastq
+   58  /Users/admin/canu/Darwin-amd64/bin/canu -p ecoli -d ecoli-pacbio genomeSize=4.8m -pacbio-raw ~/Desktop/pacbio.fastq saveReads=true gnuplot=/usr/local/opt/gnuplot\@4/bin/gnuplot 2>CanuRun_20181022.log
+   59  cd ~/Desktop/ecoli-pacbio/
+   60  head ecoli.report 
+   61  grep -c '>' ecoli.contigs.fasta 
+   62  grep -c '>' ecoli.unitigs.fasta 
+   63  cd ~/Desktop/
+   64  split -l 31498 pacbio.fastq
+   65  mv xaa ecoli_filtered_0.60.fastq
+   66  head xab
+   67  less xab
+   68  /Users/admin/canu/Darwin-amd64/bin/canu -p ecoli -d ecoli-pacbio-0.6 genomeSize=4.8m -pacbio-raw ~/Desktop/ecoli_filtered_0.60.fastq saveReads=true gnuplot=/usr/local/opt/gnuplot\@4/bin/gnuplot 2>CanuRun_20181022_0.6.log
+   69  ls
+   70  mkdir Canu
+   71  cp Canu* Canu/.
+   72  cp Canu* ./Canu/.
+   73  cp CanuRun* ./Canu/.
+   74  cp ecoli* Canu/.
+   75  git remote add origin https://github.com/zhezhen-y/PFB_problemsets.git
+   76  history > canu.history.txt
